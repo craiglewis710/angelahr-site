@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AngelaHR | HR help from Angela Hughes</title>
+<meta name="description" content="AngelaHR is run by Angela Hughes. Straightforward HR help for your business. Get in touch to talk it through.">
+<meta name="theme-color" content="#0F4C5C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%230F4C5C'/%3E%3Cpath d='M32 92L60 28l28 64' fill='none' stroke='%23fff' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='60' cy='72' r='8' fill='%23E36414'/%3E%3C/svg%3E">
+<style>
+:root {
+  --teal: #0F4C5C;
+  --teal-deep: #0A3844;
+  --orange: #E36414;
+  --ink: #1B2A2F;
+  --muted: #55676C;
+  --paper: #F7FAFA;
+  --line: #D5E1E3;
+  --font: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #E6EEF0; --muted: #9DB1B6; --paper: #0D1B1F; --line: #223A41; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: var(--font); color: var(--ink); background: var(--paper); line-height: 1.6; font-size: 1.0625rem; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.wrap { width: min(1080px, 100% - 2.5rem); margin-inline: auto; }
+
+.hero { position: relative; overflow: hidden; background: var(--teal); color: #fff; }
+.hero-mark { position: absolute; right: -6%; bottom: -18%; width: min(620px, 80vw); height: auto; opacity: .12; pointer-events: none; }
+.bar { display: flex; align-items: center; padding-block: 1.5rem; position: relative; }
+.brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; font-size: 1.5rem; letter-spacing: -.02em; }
+.brand b { font-weight: 700; }
+.brand svg { width: 2.5rem; height: 2.5rem; }
+.hero-body { position: relative; padding-block: clamp(3.5rem, 11vw, 8rem) clamp(4rem, 12vw, 9rem); }
+h1 { margin: 0; max-width: 16ch; font-size: clamp(2.4rem, 6.4vw, 4.75rem); line-height: 1.05; font-weight: 650; letter-spacing: -.03em; }
+.lede { max-width: 36rem; margin: 1.75rem 0 2.25rem; font-size: clamp(1.1rem, 2vw, 1.3rem); color: #D6E6E9; }
+.button { display: inline-flex; align-items: center; gap: .75rem; padding: .95rem 1.5rem; background: #fff; color: var(--teal-deep); font-weight: 600; text-decoration: none; border-radius: 999px; }
+.button::before { content: ""; width: .6rem; height: .6rem; border-radius: 50%; background: var(--orange); }
+.button:hover { background: #FFE9DB; }
+
+section { padding-block: clamp(3rem, 8vw, 5.5rem); }
+h2 { margin: 0; font-size: clamp(1.6rem, 3.4vw, 2.2rem); line-height: 1.15; letter-spacing: -.02em; }
+.split { display: grid; gap: 1rem 4rem; grid-template-columns: 1fr; }
+@media (min-width: 800px) { .split { grid-template-columns: 1fr 2fr; } }
+
+.mail { display: inline-block; font-size: clamp(1.5rem, 4.4vw, 2.6rem); font-weight: 650; letter-spacing: -.02em; text-decoration-color: var(--orange); text-decoration-thickness: .12em; text-underline-offset: .2em; word-break: break-word; }
+.contact p { margin: 1.25rem 0 0; max-width: 36rem; color: var(--muted); }
+
+footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+footer p { margin: 0; max-width: 46rem; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg class="hero-mark" viewBox="0 0 120 120" aria-hidden="true" fill="none"><path d="M16 112L60 12l44 100" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="84" r="9" fill="#fff"/></svg>
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="/" aria-label="AngelaHR home">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><rect width="120" height="120" rx="28" fill="#fff"/><path d="M32 92L60 28l28 64" fill="none" stroke="#0F4C5C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="72" r="8" fill="#E36414"/></svg>
+        <span>Angela<b>HR</b></span>
+      </a>
+    </div>
+    <div class="hero-body">
+      <h1>Straightforward HR help from Angela Hughes.</h1>
+      <p class="lede">If you have a people issue in your business, get in touch and tell me what is going on. If someone recommended me, let me know who sent you.</p>
+      <a class="button" href="mailto:angela@angelahr.com">Email Angela</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="contact">
+    <div class="wrap split">
+      <h2>Get in touch</h2>
+      <div>
+        <a class="mail" href="mailto:angela@angelahr.com">angela@angelahr.com</a>
+        <p>A short description of what you need is enough. I will reply and let you know how I can help.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Angela HR Ltd. Registered in England and Wales, company number 15537708. Registered office: 2a Cope Road, Banbury, Oxfordshire, England, OX16 2EH.</p>
+  </div>
+</footer>
+
+</body>
+</html>
