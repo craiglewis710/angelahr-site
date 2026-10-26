@@ -33,7 +33,7 @@ jobs:
       # keep the dev copy out of search indexes without touching the branch content
       - run: |
           rm -rf site/.git site/dev/.git
-          sed -i 's|</head>|<meta name="robots" content="noindex"></head>|' site/dev/index.html
+          find site/dev -name '*.html' -exec sed -i 's|</head>|<meta name="robots" content="noindex"></head>|' {} +
 
       - uses: actions/upload-pages-artifact@v3
         with:
